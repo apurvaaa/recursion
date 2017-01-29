@@ -33,8 +33,6 @@ var stringifyJSON = function(obj) {
       resultString += '{';
       for (var i in obj) {
     	if (obj[i] !== undefined && (typeof obj[i]) !== 'function' ) {
-    	  console.log(obj[i]);	
-    	  console.log(typeof obj[i]);
           if (resultString[resultString.length - 1] !== '{') {
             resultString += ',';
     	  }
